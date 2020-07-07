@@ -1,0 +1,37 @@
+version: "3.5"
+services:
+  php-compras:
+    container_name: php-compras
+    image: compras-php:5.6.19-apache
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www/html
+      - ./docker/apache/virtual-host.conf:/etc/apache2/sites-available/000-default.conf
+    environment:
+      - APP_ENV=local-dev
+      - HOME_URI_VAL=http://localhost
+      - DURACAO_TOKEN=1
+      - HOSTNAME=10.222.15.10
+      - DB_NAME=ci_sesan
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - DB_PORT=5432
+      - DB_CHARSET=utf8
+      - MAIL_HOSTNAME=mail5.cidadania.gov.br
+      - MAIL_USER=compras.institucionais@mds.gov.br
+      - MAIL_PASSWORD=senha
+      - MAIL_PORT=25
+      - MAIL_FROM=compras.institucionais@mds.gov.br
+      - MAIL_FROM_NAME=Compras Institucionais
+      - DEBUG=false
+    entrypoint: /var/www/html/docker/entrypoint/local-dev.sh
+    ports:
+      - 80:80
+    working_dir: /var/www
+    networks:
+      - network_compras
+networks:
+  network_compras:
+    driver: bridge
