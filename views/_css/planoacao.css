@@ -1,0 +1,509 @@
+/*!
+ * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+body {
+    margin-top: 100px;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    body {
+        margin-top: 0px;
+    }
+}
+
+#wrapper {
+    padding-left: 0;
+}
+
+#page-wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+
+.font35 {
+    font-size: 35px;
+    line-height: normal;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+}
+
+/* Top Navigation */
+
+.top-nav {
+    padding: 0 15px;
+	color: red;
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 34px;
+    line-height: 20px;
+    color: #999;
+}
+
+/* .navbar-inverse {
+
+background-color: #fff;
+border-color: #f0ad4e;
+
+} */
+
+/* inicio nav Philipe */ 
+
+.navbar-inverse {
+  background-color: #fbda43;
+  border-color: #fad423;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fce475), to(#fbda43));
+  background-image: -webkit-linear-gradient(top, #fce475, 0%, #fbda43, 100%);
+  background-image: -moz-linear-gradient(top, #fce475 0%, #fbda43 100%);
+  background-image: linear-gradient(to bottom, #fce475 0%, #fbda43 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffce475', endColorstr='#fffbda43', GradientType=0);
+}
+.navbar-inverse .navbar-brand {
+  color: #195128;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #0d2a15;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #195128;
+}
+.navbar-inverse .navbar-nav > li:last-child > a {
+  border-right: 1px solid #fad423;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #195128;
+  border-left: 1px solid #fad423;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #408553;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #408553;
+  background-color: #fad423;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fad423), to(#fbdd54));
+  background-image: -webkit-linear-gradient(top, #fad423, 0%, #fbdd54, 100%);
+  background-image: -moz-linear-gradient(top, #fad423 0%, #fbdd54 100%);
+  background-image: linear-gradient(to bottom, #fad423 0%, #fbdd54 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffad423', endColorstr='#fffbdd54', GradientType=0);
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #fad320;
+}
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret,
+.navbar-inverse .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #408553;
+  border-bottom-color: #408553;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #fad423;
+  color: #408553;
+}
+.navbar-inverse .navbar-nav > .open > a .caret,
+.navbar-inverse .navbar-nav > .open > a:hover .caret,
+.navbar-inverse .navbar-nav > .open > a:focus .caret {
+  border-top-color: #408553;
+  border-bottom-color: #408553;
+}
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-top-color: #195128;
+  border-bottom-color: #195128;
+}
+@media (max-width: 767) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #195128;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #408553;
+    background-color: transparent;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #408553;
+    background-color: #fad423;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-inverse .navbar-link {
+  color: #195128;
+}
+.navbar-inverse .navbar-link:hover {
+  color: #408553;
+}
+
+
+/* Fim nav Philipe */
+
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color: #d8d6d6;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+ul.message-dropdown {
+    padding: 0;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+li.message-preview {
+    width: 275px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+li.message-preview>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li.message-footer {
+    margin: 5px 0;
+}
+
+ul.alert-dropdown {
+    width: 200px;
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #222;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #000 !important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+/* Flot Chart Containers */
+
+.flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* Custom Colored Panels */
+
+.huge {
+    font-size: 40px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green a {
+    color: #5cb85c;
+}
+
+.panel-green a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red a {
+    color: #d9534f;
+}
+
+.panel-red a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow a {
+    color: #f0ad4e;
+}
+
+.panel-yellow a:hover {
+    color: #df8a13;
+}
+
+
+/* Botão Salvar cor Verde */
+.btn-salvar.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn-salvar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #107020;
+  background-image: -moz-linear-gradient(top, #10701a, #10702a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#10701a), to(#10702a));
+  background-image: -webkit-linear-gradient(top, #10701a, #10702a);
+  background-image: -o-linear-gradient(top, #10701a, #10702a);
+  background-image: linear-gradient(to bottom, #10701a, #10702a);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff10701a', endColorstr='#ff10702a', GradientType=0);
+  border-color: #10702a #10702a #062d11;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #10702a;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-salvar:hover,
+.btn-salvar:focus,
+.btn-salvar:active,
+.btn-salvar.active,
+.btn-salvar.disabled,
+.btn-salvar[disabled] {
+  color: #ffffff;
+  background-color: #10702a;
+  *background-color: #0d5a22;
+}
+.btn-salvar:active,
+.btn-salvar.active {
+  background-color: #0a4319 ;
+}
+/* Fim - Botão Salvar cor Verde */
+
+.text-redesuas {
+  color: #f29406;
+}
+a.text-redesuas:hover {
+  color: #f29406;
+}
+
+
+
+/* CSS - Login */
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+/* Fim - CSS - Login */
+
+
+div.new-output {
+font-size: 13pt;
+border: solid 1px #afafaf;
+border-radius: 8px;
+box-shadow: 5px 5px 10px rgba(0,0,0,.4);
+background-color: #fff;
+
+}
+
+
+ #rodape /*rodapé do sistema */
+  {
+      background-color: #fff;
+      text-align: center;
+      border-top: solid 1px #afafaf;
+      font-size:7pt;
+      font-family: Verdana;
+      font-weight:bold;
+      width:100%;
+      color:Black;
+  }
+
