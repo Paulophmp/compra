@@ -26,6 +26,8 @@ services:
       - MAIL_FROM=compras.institucionais@mds.gov.br
       - MAIL_FROM_NAME=Compras Institucionais
       - DEBUG=false
+      - ENV=dev
+      - EMAIL_TO=paacomprainstitucional@cidadania.gov.br
     entrypoint: /var/www/html/docker/entrypoint/local-dev.sh
     ports:
       - 80:80

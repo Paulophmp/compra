@@ -58,6 +58,12 @@ define( 'MAIL_FROM_NAME', '@@MAIL_FROM_NAME@@' );
 // Se você estiver desenvolvendo, modifique o valor para true
 define( 'DEBUG', '@@DEBUG@@' );
 
+// Variavel de Ambiente
+define( 'ENV', 'dev');
+
+// EMAIL de Ambiente
+define( 'EMAIL_TO', 'paacomprainstitucional@cidadania.gov.br');
+
 /**
  * Não edite daqui em diante
  */

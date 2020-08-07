@@ -25,6 +25,9 @@ if  ! [ -e "/var/www/html/config.php" ] ; then
     sed -i "s/@@MAIL_FROM@@/$MAIL_FROM/g" /var/www/html/config.php
     sed -i "s/@@MAIL_FROM_NAME@@/$MAIL_FROM_NAME/g" /var/www/html/config.php
 
+    sed -i "s/@@ENV@@/$ENV/g" /var/www/html/config.php
+    sed -i "s/@@EMAIL_TO@@/$EMAIL_TO/g" /var/www/html/config.php
+
     sed -i "s/@@DEBUG@@/$DEBUG/g" /var/www/html/config.php
 fi
 
