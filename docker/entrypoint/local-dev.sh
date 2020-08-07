@@ -6,7 +6,8 @@ echo "[ ${PORCENTAGE_0} ] Back - Starting Endpoint of Application"
 
 if  ! [ -e "/var/www/html/config.php" ] ; then
     echo "[ ****************** ] Copying sample application configuration to real one"
-    cp /var/www/html/example-config.php /var/www/html/config.php
+    cp /var/www/html/example-config.php /var/www/html/config.php \
+    && chmod 777 /var/www/html/config.php
 
     # Regex to many "/"
     sed -i "s@HOME_URI_VAL@$HOME_URI_VAL@g" /var/www/html/config.php
